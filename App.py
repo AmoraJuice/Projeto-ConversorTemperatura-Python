@@ -30,12 +30,16 @@ def converter_temperature(temp, entry_scale, outgoing_scale):
         temp_kelvin = celsius_to_kelvin(temp)
         print("A temperatura em Kelvin e: {:.2f}".format(temp_kelvin))
     elif  entry_scale == 'F' and outgoing_scale == 'C':
+        temp_celsius = fahrenheit_to_celsius(temp)
         print("A temperatura em Celsius e: {:.2f}".format(temp_celsius))
     elif entry_scale == 'F' and outgoing_scale == 'K':
+        temp_kelvin = fahrenheit_to_kevin(temp)
         print("A temperatura em Kelvin e: {:.2f}".format(temp_kelvin))
     elif entry_scale == 'K' and outgoing_scale == 'F':
+        temp_fahrenheit = kelvin_to_fahrenheit(temp)
         print("A temperatura em Fahrenheit e: {:.2f}".format(temp_fahrenheit))
     elif entry_scale == 'K' and outgoing_scale == 'C':
+        temp_celsius = kelvin_to_celsius(temp)
         print("A temperatura em Celsius e: {:.2f}".format(temp_celsius))
     else:
         print("A temperatura nao pode ser convertida.")
